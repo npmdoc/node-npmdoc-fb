@@ -1,13 +1,13 @@
 <svg height="158" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="158" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-04 20:00:00 +0000    52351 byte  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-04 20:00:00 +0000     1219 byte  CHANGELOG.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-04 20:00:00 +0000      577 byte  LICENSE</tspan>
-<tspan x="10" y="74">  3.  2017-04-04 20:00:00 +0000    20844 byte  README.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-04 20:00:00 +0000      846 byte  lib/FacebookApiException.js</tspan>
-<tspan x="10" y="106">  5.  2017-04-04 20:00:00 +0000    24114 byte  lib/fb.js</tspan>
-<tspan x="10" y="122">  6.  2017-04-04 20:00:00 +0000     1693 byte  lib/index.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-04 20:00:00 +0000     3058 byte  package.json</tspan>
+<tspan x="10" y="26">  0.  2017-04-04 20:01:32 +0000    52351 byte  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-04 20:01:32 +0000     1219 byte  CHANGELOG.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-04 20:01:32 +0000      577 byte  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-04 20:01:32 +0000    20844 byte  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-04 20:01:32 +0000      846 byte  lib/FacebookApiException.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-04 20:01:32 +0000    24114 byte  lib/fb.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-04 20:01:32 +0000     1693 byte  lib/index.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-04 20:01:32 +0000     3058 byte  package.json</tspan>
 </text>
 </svg>
