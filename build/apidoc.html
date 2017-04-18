@@ -51,7 +51,7 @@
 
         href="https://github.com/node-facebook/facebook-node-sdk"
 
-    >fb (v1.1.1)</a>
+    >fb (v2.0.0)</a>
 </h1>
 <h4>NodeJS Library for Facebook</h4>
 <div class="apidocSectionDiv"><a
@@ -186,20 +186,14 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fb.FB">module fb.FB</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.Facebook">module fb.Facebook</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fb.FB.FacebookApiException">
-            function <span class="apidocSignatureSpan">fb.FB.</span>FacebookApiException
-            <span class="apidocSignatureSpan">(res)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fb.Facebook.Facebook">
+            function <span class="apidocSignatureSpan">fb.</span>Facebook
+            <span class="apidocSignatureSpan">(opts, _internalInherit)</span>
             </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">fb.FB.</span>version</span>
 
         </li>
 
@@ -209,9 +203,35 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fb.FacebookApiException.default">
-            function <span class="apidocSignatureSpan">fb.FacebookApiException.</span>default
+            <a class="apidocElementLiA" href="#apidoc.element.fb.FacebookApiException.FacebookApiException">
+            function <span class="apidocSignatureSpan">fb.</span>FacebookApiException
             <span class="apidocSignatureSpan">(res)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.api">module fb.api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.api.api">
+            function <span class="apidocSignatureSpan">fb.</span>api
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.extend">module fb.extend</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.extend.extend">
+            function <span class="apidocSignatureSpan">fb.</span>extend
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -258,6 +278,97 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.getAccessToken">module fb.getAccessToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.getAccessToken.getAccessToken">
+            function <span class="apidocSignatureSpan">fb.</span>getAccessToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.getLoginUrl">module fb.getLoginUrl</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.getLoginUrl.getLoginUrl">
+            function <span class="apidocSignatureSpan">fb.</span>getLoginUrl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.napi">module fb.napi</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.napi.napi">
+            function <span class="apidocSignatureSpan">fb.</span>napi
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.options">module fb.options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.options.options">
+            function <span class="apidocSignatureSpan">fb.</span>options
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.parseSignedRequest">module fb.parseSignedRequest</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.parseSignedRequest.parseSignedRequest">
+            function <span class="apidocSignatureSpan">fb.</span>parseSignedRequest
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.setAccessToken">module fb.setAccessToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.setAccessToken.setAccessToken">
+            function <span class="apidocSignatureSpan">fb.</span>setAccessToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fb.withAccessToken">module fb.withAccessToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fb.withAccessToken.withAccessToken">
+            function <span class="apidocSignatureSpan">fb.</span>withAccessToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -273,8 +384,6 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Facebook(opts, _internalInherit) {
 		(0, _classCallCheck3.default)(this, Facebook);
-		this.FacebookApiException = _FacebookApiException2.default;
-		this.version = version;
 
 		if (_internalInherit instanceof Facebook) {
 			this[_opts] = (0, _create2.default)(_internalInherit[_opts]);
@@ -282,7 +391,7 @@
 			this[_opts] = (0, _create2.default)(defaultOptions);
 		}
 
-		if ((typeof opts === &#x27;undefined&#x27; ? &#x27;undefined&#x27; : (0, _typeof3.default)(opts)) === &#x27;object&#x27;) {
+		if (typeof opts === &#x27;object&#x27;) {
 			this.options(opts);
 		}
 	}</pre></li>
@@ -376,10 +485,9 @@ var fooApp = FB.<span class="apidocCodeKeywordSpan">extend</span>({appId: &#x27;
     barApp = FB.extend({appId: &#x27;bar_id&#x27;, appSecret: &#x27;secret&#x27;});
 ```
 
-# Running Samples
-Update `appId` and `appSecret` in `samples/scrumptious/config.js`
+## Graph Api
 
-```
+### Get
 ...</pre></li>
     </ul>
 
@@ -452,11 +560,15 @@ These options are accepted and all correspond to url parameters documented in Fa
     <ul>
     <li>description and source-code<pre class="apidocCodePre">napi = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-`FB.api`, the callback expects one parameter which is the response. In `FB.napi` the callback expects two
-parameters instead of one and follows the node standards. The first parameter is an error which is always
-of type `FB.FacebookApiException` and the second parameter is the same response as in `FB.api`.
-Error response can be accessed using `error.response` which is the same response as the response when using
-`FB.api`
+## Node style callback with FB.napi
+
+*This is a non-standard api and does not exist in the official client side FB JS SDK.*
+
+`FB.napi` takes the same input as `FB.api`. Only the callback parameters is different. In the original `FB.api`, the callback expects
+ one parameter which is the response. In `FB.napi` the callback expects two parameters instead of one and follows the node standards
+. The first parameter is an error which is always of type `FacebookApiException` and the second parameter is the same response as
+ in `FB.api`. Error response can be accessed using `error.response` which is the same response as the response when using `FB.api
+`.
 
 ```js
 FB.<span class="apidocCodeKeywordSpan">napi</span>(&#x27;4&#x27;, function(error, response) {
@@ -495,8 +607,9 @@ var fooApp = FB.extend({appId: &#x27;foo_id&#x27;, appSecret: &#x27;secret&#x27;
     barApp = FB.extend({appId: &#x27;bar_id&#x27;, appSecret: &#x27;secret&#x27;});
 ```
 
-# Running Samples
-Update `appId` and `appSecret` in `samples/scrumptious/config.js`
+## Graph Api
+
+### Get
 ...</pre></li>
     </ul>
 
@@ -598,12 +711,58 @@ FB.setAccessToken(&#x27;access_token&#x27;);
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fb.FB" id="apidoc.module.fb.FB">module fb.FB</a></h1>
+<h1><a href="#apidoc.module.fb.Facebook" id="apidoc.module.fb.Facebook">module fb.Facebook</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.fb.FB.FacebookApiException" id="apidoc.element.fb.FB.FacebookApiException">
-        function <span class="apidocSignatureSpan">fb.FB.</span>FacebookApiException
+        <a href="#apidoc.element.fb.Facebook.Facebook" id="apidoc.element.fb.Facebook.Facebook">
+        function <span class="apidocSignatureSpan">fb.</span>Facebook
+        <span class="apidocSignatureSpan">(opts, _internalInherit)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Facebook(opts, _internalInherit) {
+		(0, _classCallCheck3.default)(this, Facebook);
+
+		if (_internalInherit instanceof Facebook) {
+			this[_opts] = (0, _create2.default)(_internalInherit[_opts]);
+		} else {
+			this[_opts] = (0, _create2.default)(defaultOptions);
+		}
+
+		if (typeof opts === &#x27;object&#x27;) {
+			this.options(opts);
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Library usage
+
+Libraries can isolate themselves from the options belonging to the default `FB` by creating an instance of the `Facebook` class.
+
+```javascript
+// ES5
+var FB = require(&#x27;fb&#x27;),
+    fb = new FB.<span class="apidocCodeKeywordSpan">Facebook</span>(options);
+
+// ES2015 w/ require()
+var {Facebook, FacebookApiException} = require(&#x27;fb&#x27;),
+    fb = new Facebook(options);
+
+// ES2015 w/ import through Babel
+import {Facebook, FacebookApiException} from &#x27;fb&#x27;;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.FacebookApiException" id="apidoc.module.fb.FacebookApiException">module fb.FacebookApiException</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.FacebookApiException.FacebookApiException" id="apidoc.element.fb.FacebookApiException.FacebookApiException">
+        function <span class="apidocSignatureSpan">fb.</span>FacebookApiException
         <span class="apidocSignatureSpan">(res)</span>
         </a>
     </h2>
@@ -618,43 +777,71 @@ FB.setAccessToken(&#x27;access_token&#x27;);
     </ul>
 
 
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.api" id="apidoc.module.fb.api">module fb.api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.api.api" id="apidoc.element.fb.api.api">
+        function <span class="apidocSignatureSpan">fb.</span>api
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">api = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+## Graph Api
+
+### Get
+
+```js
+FB.<span class="apidocCodeKeywordSpan">api</span>(&#x27;4&#x27;, function (res) {
+  if(!res || res.error) {
+   console.log(!res ? &#x27;error occurred&#x27; : res.error);
+   return;
+  }
+  console.log(res.id);
+  console.log(res.name);
+});
+...</pre></li>
+    </ul>
 
 
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fb.FacebookApiException" id="apidoc.module.fb.FacebookApiException">module fb.FacebookApiException</a></h1>
+<h1><a href="#apidoc.module.fb.extend" id="apidoc.module.fb.extend">module fb.extend</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.fb.FacebookApiException.default" id="apidoc.element.fb.FacebookApiException.default">
-        function <span class="apidocSignatureSpan">fb.FacebookApiException.</span>default
-        <span class="apidocSignatureSpan">(res)</span>
+        <a href="#apidoc.element.fb.extend.extend" id="apidoc.element.fb.extend.extend">
+        function <span class="apidocSignatureSpan">fb.</span>extend
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function FacebookApiException(res) {
-	this.name = &#x27;FacebookApiException&#x27;;
-	this.message = (0, _stringify2.default)(res || {});
-	this.response = res;
-	Error.captureStackTrace(this, this.constructor.name);
-}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">extend = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	return buffer.toString(&#x27;utf8&#x27;);
-};
-var nodeifyCallback = function nodeifyCallback(originalCallback) {
-	// normalizes the callback parameters so that the
-	// first parameter is always error and second is response
-	return function (res) {
-		if (!res || res.error) {
-			originalCallback(new _FacebookApiException2.<span class="apidocCodeKeywordSpan">default</span>(res));
-		} else {
-			originalCallback(null, res);
-		}
-	};
-};
 
-var _opts = (0, _symbol2.default)(&#x27;opts&#x27;);
+## Multi-app usage
+
+Applications that run on behalf of multiple apps with different Facebook appIds and secrets can use `.extend` (on `FB` or any `Facebook
+` instance) to create a new instance which inherits options not set on it from the instance it is created from (like the API `version
+` your application is coded against).
+
+```javascript
+FB.options({version: &#x27;v2.4&#x27;});
+var fooApp = FB.<span class="apidocCodeKeywordSpan">extend</span>({appId: &#x27;foo_id&#x27;, appSecret: &#x27;secret&#x27;}),
+    barApp = FB.extend({appId: &#x27;bar_id&#x27;, appSecret: &#x27;secret&#x27;});
+```
+
+## Graph Api
+
+### Get
 ...</pre></li>
     </ul>
 
@@ -674,8 +861,6 @@ var _opts = (0, _symbol2.default)(&#x27;opts&#x27;);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Facebook(opts, _internalInherit) {
 		(0, _classCallCheck3.default)(this, Facebook);
-		this.FacebookApiException = _FacebookApiException2.default;
-		this.version = version;
 
 		if (_internalInherit instanceof Facebook) {
 			this[_opts] = (0, _create2.default)(_internalInherit[_opts]);
@@ -683,7 +868,7 @@ var _opts = (0, _symbol2.default)(&#x27;opts&#x27;);
 			this[_opts] = (0, _create2.default)(defaultOptions);
 		}
 
-		if ((typeof opts === &#x27;undefined&#x27; ? &#x27;undefined&#x27; : (0, _typeof3.default)(opts)) === &#x27;object&#x27;) {
+		if (typeof opts === &#x27;object&#x27;) {
 			this.options(opts);
 		}
 	}</pre></li>
@@ -729,6 +914,249 @@ import {Facebook, FacebookApiException} from &#x27;fb&#x27;;
 
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.getAccessToken" id="apidoc.module.fb.getAccessToken">module fb.getAccessToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.getAccessToken.getAccessToken" id="apidoc.element.fb.getAccessToken.getAccessToken">
+        function <span class="apidocSignatureSpan">fb.</span>getAccessToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAccessToken = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+### getAccessToken
+*Unlike `setAccessToken` this is a standard api and exists in FB JS SDK.*
+
+```js
+FB.setAccessToken(&#x27;access_token&#x27;);
+var accessToken = FB.<span class="apidocCodeKeywordSpan">getAccessToken</span>();
+```
+
+### AppSecret Proof
+For improved security, as soon as you provide an app secret and an access token, the
+library automatically computes and adds the appsecret_proof parameter to your requests.
+
+## Configuration options
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.getLoginUrl" id="apidoc.module.fb.getLoginUrl">module fb.getLoginUrl</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.getLoginUrl.getLoginUrl" id="apidoc.element.fb.getLoginUrl.getLoginUrl">
+        function <span class="apidocSignatureSpan">fb.</span>getLoginUrl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getLoginUrl = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### getLoginUrl
+*This is a non-standard api and does not exist in the official client side FB JS SDK.*
+
+This returns the redirect url for a [manual login flow](https://developers.facebook.com/docs/facebook-login/manually-build-a-login
+-flow).
+
+```js
+FB.<span class="apidocCodeKeywordSpan">getLoginUrl</span>({
+    scope: &#x27;email,user_likes&#x27;,
+    redirect_uri: &#x27;http://example.com/&#x27;
+});
+```
+
+These options are accepted and all correspond to url parameters documented in Facebook&#x27;s manual login flow documentation.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.napi" id="apidoc.module.fb.napi">module fb.napi</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.napi.napi" id="apidoc.element.fb.napi.napi">
+        function <span class="apidocSignatureSpan">fb.</span>napi
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">napi = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Node style callback with FB.napi
+
+*This is a non-standard api and does not exist in the official client side FB JS SDK.*
+
+`FB.napi` takes the same input as `FB.api`. Only the callback parameters is different. In the original `FB.api`, the callback expects
+ one parameter which is the response. In `FB.napi` the callback expects two parameters instead of one and follows the node standards
+. The first parameter is an error which is always of type `FacebookApiException` and the second parameter is the same response as
+ in `FB.api`. Error response can be accessed using `error.response` which is the same response as the response when using `FB.api
+`.
+
+```js
+FB.<span class="apidocCodeKeywordSpan">napi</span>(&#x27;4&#x27;, function(error, response) {
+if(error) {
+    if(error.response.error.code === &#x27;ETIMEDOUT&#x27;) {
+        console.log(&#x27;request timeout&#x27;);
+    }
+    else {
+        console.log(&#x27;error&#x27;, error.message);
+    }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.options" id="apidoc.module.fb.options">module fb.options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.options.options" id="apidoc.element.fb.options.options">
+        function <span class="apidocSignatureSpan">fb.</span>options
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+## Multi-app usage
+
+Applications that run on behalf of multiple apps with different Facebook appIds and secrets can use `.extend` (on `FB` or any `Facebook
+` instance) to create a new instance which inherits options not set on it from the instance it is created from (like the API `version
+` your application is coded against).
+
+```javascript
+FB.<span class="apidocCodeKeywordSpan">options</span>({version: &#x27;v2.4&#x27;});
+var fooApp = FB.extend({appId: &#x27;foo_id&#x27;, appSecret: &#x27;secret&#x27;}),
+    barApp = FB.extend({appId: &#x27;bar_id&#x27;, appSecret: &#x27;secret&#x27;});
+```
+
+## Graph Api
+
+### Get
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.parseSignedRequest" id="apidoc.module.fb.parseSignedRequest">module fb.parseSignedRequest</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.parseSignedRequest.parseSignedRequest" id="apidoc.element.fb.parseSignedRequest.parseSignedRequest">
+        function <span class="apidocSignatureSpan">fb.</span>parseSignedRequest
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseSignedRequest = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+*This is a non-standard api and does not exist in the official client side FB JS SDK.*
+
+```js
+var signedRequestValue = &#x27;signed_request_value&#x27;;
+var appSecret = &#x27;app_secret&#x27;;
+
+var signedRequest  = FB.<span class="apidocCodeKeywordSpan">parseSignedRequest</span>(signedRequestValue, appSecret);
+if(signedRequest) {
+    var accessToken = signedRequest.oauth_token;
+    var userId = signedRequest.user_id;
+    var userCountry = signedRequest.user.country;
+}
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.setAccessToken" id="apidoc.module.fb.setAccessToken">module fb.setAccessToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.setAccessToken.setAccessToken" id="apidoc.element.fb.setAccessToken.setAccessToken">
+        function <span class="apidocSignatureSpan">fb.</span>setAccessToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setAccessToken = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+console.log(res.name);
+});
+```
+
+### Post
+
+```js
+FB.<span class="apidocCodeKeywordSpan">setAccessToken</span>(&#x27;access_token&#x27;);
+
+var body = &#x27;My first post using facebook-node-sdk&#x27;;
+FB.api(&#x27;me/feed&#x27;, &#x27;post&#x27;, { message: body }, function (res) {
+if(!res || res.error) {
+  console.log(!res ? &#x27;error occurred&#x27; : res.error);
+  return;
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fb.withAccessToken" id="apidoc.module.fb.withAccessToken">module fb.withAccessToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fb.withAccessToken.withAccessToken" id="apidoc.element.fb.withAccessToken.withAccessToken">
+        function <span class="apidocSignatureSpan">fb.</span>withAccessToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">withAccessToken = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### withAccessToken
+*This is a non-standard api and does not exist in the official client side FB JS SDK.*
+
+Using `FB.extend` this returns a new FB object that inherits the same options but has an accessToken specific to it set.
+
+```js
+var fb = FB.<span class="apidocCodeKeywordSpan">withAccessToken</span>(&#x27;access_token&#x27;);
+```
+
+### getAccessToken
+*Unlike `setAccessToken` this is a standard api and exists in FB JS SDK.*
+
+```js
+FB.setAccessToken(&#x27;access_token&#x27;);
+...</pre></li>
+    </ul>
 
 
 </div>
