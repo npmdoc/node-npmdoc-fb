@@ -1,6 +1,6 @@
 # npmdoc-fb
 
-#### api documentation for  [fb (v2.0.0)](https://github.com/node-facebook/facebook-node-sdk)  [![npm package](https://img.shields.io/npm/v/npmdoc-fb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-fb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-fb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-fb)
+#### basic api documentation for  [fb (v2.0.0)](https://github.com/node-facebook/facebook-node-sdk)  [![npm package](https://img.shields.io/npm/v/npmdoc-fb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-fb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-fb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-fb)
 
 #### NodeJS Library for Facebook
 
@@ -93,7 +93,8 @@
         "prepublish": "npm run build",
         "test": "npm run build && node ./node_modules/mocha/bin/mocha --recursive"
     },
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "bin": {}
 }
 ```
 
